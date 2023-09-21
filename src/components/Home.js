@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Menu from "./menu";
 import Banner from "./banner";
 import Movies from "./movies";
+import Event from "./event";
 
 function Home() {
    const navigate = useNavigate();
@@ -10,6 +11,7 @@ function Home() {
          <Menu />
          <Banner />
          <Movies />
+         <Event />
       </div>
    );
 }
