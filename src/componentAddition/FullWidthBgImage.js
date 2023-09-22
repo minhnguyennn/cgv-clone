@@ -1,9 +1,8 @@
 export default function FullWidthBgImage(props) {
-   console.log(props);
-   const { urlImg, width, height } = props;
+   const { urlImg } = props;
    return (
       <>
-         <img src={urlImg} alt="" style={{ width: width, height: height }} />
+         <img src={urlImg} alt="" />
       </>
    );
 }

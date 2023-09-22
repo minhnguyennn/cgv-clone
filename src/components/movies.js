@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.css";
-import dataImages from "../DataImage/image";
+import dataImages from "../Data/image";
 import React from "react";
 // Import css files
 import "slick-carousel/slick/slick.css";
@@ -16,7 +16,7 @@ export default function Movies() {
             <SliderComp
                data={dataImages}
                autoplay="true"
-               slidesToShow= "4"
+               slidesToShow="4"
                slidesToScroll="1"
                autoplaySpeed="500"
             />

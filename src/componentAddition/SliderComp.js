@@ -4,11 +4,12 @@ import Slider from "react-slick";
 import FullWidthBgImage from "./FullWidthBgImage";
 export default function SliderComp(props) {
    const { data, slidesToShow, slidesToScroll } = props;
+
    const HandleNextBtn = (props) => {
       const { className, onClick, currentSlide, style, slideCount } = props;
       return (
          <>
-            {currentSlide !== slidesToShow - slideCount && (
+            {currentSlide !== Number(slideCount) - Number(slidesToShow) && (
                <div
                   className={className}
                   onClick={onClick}
@@ -18,6 +19,7 @@ export default function SliderComp(props) {
          </>
       );
    };
+
    const HandlePrevBtn = (props) => {
       const { className, onClick, currentSlide, style } = props;
       return (
@@ -35,7 +37,7 @@ export default function SliderComp(props) {
 
    const settings = {
       dots: false,
-      infinite: true,
+      infinite: false,
       speed: 500,
       arrows: true,
       autoplay: false,
@@ -56,11 +58,7 @@ export default function SliderComp(props) {
                            target="_blank"
                            rel="noopener noreferrer"
                         >
-                           <FullWidthBgImage
-                              urlImg={item.src}
-                              width={"100%"}
-                              height={"300px"}
-                           />
+                           <FullWidthBgImage urlImg={item.src} />
                         </a>
                      </>
                   );
