@@ -13,9 +13,10 @@ body {
 
 .menu-ul {
   list-style-type: none;
-  background-color: #fdf7dc;
   display: flex;
   justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
 .menu-li:hover .dropdown-content {
@@ -174,7 +175,7 @@ body {
   cursor: pointer;
 }
 
-.event .toggle-tabs .left span{
+.event .toggle-tabs .left span {
   background: transparent url("./Img/bg_tebmenu-line.gif") no-repeat right;
 }
 
@@ -186,4 +187,53 @@ body {
 
 .event {
   border-bottom: 3px black solid;
+}
+
+#header {
+  background: url("./Img/bg-top.png") repeat-x left center;
+}
+
+.logo {
+  background: url("./Img/cgvlogo.png") no-repeat;
+  width: 136px;
+  height: 59px;
+  text-indent: -99999px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0 30px;
+}
+
+.home-promotion-card {
+  margin-top: 20px;
+}
+
+.promos {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.format-border {
+  border: 1px solid #241d1e;
+}
+
+.col-hd {
+  height: 261px;
+  padding: 3px;
+  border: 2px solid #241d1e;
+}
+
+.col-ad {
+  border: 2px solid #241d1e;
+  padding: 3px;
+}
+
+.home-promotion-card img {
+  width: 100%;
 }

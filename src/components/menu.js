@@ -1,7 +1,8 @@
 export default function Menu() {
    return (
       <>
-         <div className="menu">
+         <div className="menu max-width">
+            <div className="logo">ádasdad</div>
             <ul className="menu-ul">
                <li className="menu-li">
                   <a href="">phim</a>

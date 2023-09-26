@@ -3,16 +3,22 @@ import Menu from "./menu";
 import Banner from "./banner";
 import Movies from "./movies";
 import Event from "./event";
+import Promo from "./promo";
 
 function Home() {
    // const navigate = useNavigate();
    return (
-      <div className="max-width">
-         <Menu />
-         <Banner />
-         <Movies />
-         <Event />
-      </div>
+      <>
+         <header id="header">
+            <Menu />
+         </header>
+         <div className="main-container max-width">
+            <Banner />
+            <Movies />
+            <Event />
+            <Promo/>
+         </div>
+      </>
    );
 }
 
