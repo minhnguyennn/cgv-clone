@@ -4,6 +4,7 @@ import Banner from "./banner";
 import Movies from "./movies";
 import Event from "./event";
 import Promo from "./promo";
+import FooterPolicy from "./FooterPolicy";
 
 function Home() {
    // const navigate = useNavigate();
@@ -16,7 +17,10 @@ function Home() {
             <Banner />
             <Movies />
             <Event />
-            <Promo/>
+            <Promo />
+         </div>
+         <div className="footer-container">
+            <FooterPolicy />
          </div>
       </>
    );

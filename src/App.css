@@ -1,16 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
-*,
-html,
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Inter;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-}
-
 .menu-ul {
   list-style-type: none;
   display: flex;
@@ -237,4 +226,8 @@ body {
 
 .home-promotion-card img {
   width: 100%;
+}
+
+.footer-container {
+
 }
