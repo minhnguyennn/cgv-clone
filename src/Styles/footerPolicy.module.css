@@ -1,0 +1,24 @@
+.vietnam {}
+
+.content {
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+.content h3 {
+    color: #636363;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.content a {
+    color: #636363;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.border {
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}

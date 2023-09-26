@@ -198,7 +198,6 @@
 
 .home-promotion-card {
   margin-top: 20px;
-  border-bottom: 3px solid #241d1e;
 }
 
 .promos {
@@ -228,6 +227,11 @@
   width: 100%;
 }
 
-.footer-container {
-
+.main-container {
+  padding-bottom: 30px;
+  border-bottom: 3px solid #241d1e;
 }
+
+.footer-container {
+  margin-top: 30px;
+} 
