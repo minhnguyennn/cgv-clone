@@ -5,6 +5,7 @@ import Movies from "./movies";
 import Event from "./event";
 import Promo from "./promo";
 import FooterPolicy from "./FooterPolicy";
+import FooterPermision from "./FooterPermision";
 
 function Home() {
    // const navigate = useNavigate();
@@ -21,6 +22,7 @@ function Home() {
          </div>
          <div className="footer-container">
             <FooterPolicy />
+            <FooterPermision/>
          </div>
       </>
    );

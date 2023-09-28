@@ -2,7 +2,8 @@
 
 .content {
     display: flex;
-    padding-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     justify-content: space-between;
 }
 
@@ -16,9 +17,53 @@
     color: #636363;
     font-size: 14px;
     line-height: 22px;
+
 }
 
 .border {
     border-top: 1px solid #222;
     border-bottom: 1px solid #222;
+}
+
+.ul-social {
+    display: flex;
+
+}
+
+.facebook,
+.youtube,
+.instagram,
+.zalo {
+    background: url("../Img/bg-social-footer-40.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    text-indent: -9999px;
+    width: 39px;
+    height: 39px;
+}
+
+.facebook {
+    background-position: -5px 0px;
+}
+
+.youtube {
+    background-position: -46px 1px;
+}
+
+.instagram {
+    background-position: -86px 0px;
+}
+
+.zalo {
+    background-position: -128px 0px;
+}
+
+.permision {
+    display: inline-block;
+    text-indent: -9999px;
+    background: url("../Img/cong-thuong.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 70px;
 }
