@@ -44,6 +44,11 @@
   line-height: 30px;
   text-transform: capitalize;
   display: block;
+  padding: 10px;
+}
+
+.dropdown-content>li>a:hover {
+  color: #e71a0f;
 }
 
 .each-slide-effect>div {
@@ -238,4 +243,8 @@
   background: url("./Img/bg-bottom-footer.jpg");
   background-repeat: repeat-x;
   background-position: center bottom;
+}
+
+.color-btn {
+  color: red;
 }

@@ -1,4 +1,3 @@
-// import { useNavigate } from "react-router-dom";
 import Menu from "./menu";
 import Banner from "./banner";
 import Movies from "./movies";
@@ -8,7 +7,6 @@ import FooterPolicy from "./FooterPolicy";
 import FooterPermision from "./FooterPermision";
 
 function Home() {
-   // const navigate = useNavigate();
    return (
       <>
          <header id="header">
@@ -22,7 +20,7 @@ function Home() {
          </div>
          <div className="footer-container">
             <FooterPolicy />
-            <FooterPermision/>
+            <FooterPermision />
          </div>
       </>
    );

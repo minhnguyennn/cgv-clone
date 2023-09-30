@@ -3,7 +3,7 @@ import style from "../Styles/FooterPermision.module.css";
 import React from "react";
 
 export default function FooterPermision() {
-   const { container, logo, content, background } = style;
+   const { container, logo, content } = style;
 
    return (
       <>
