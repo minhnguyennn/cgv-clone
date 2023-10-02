@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
    AppBar,
    Toolbar,
@@ -7,12 +8,10 @@ import {
    Menu,
    MenuItem,
 } from "@mui/material";
-import { useNavigate } from "react-router-dom";
 
-export default function NowShowing() {
-   const navigate = useNavigate();
-   const [anchorEl, setAnchorEl] = React.useState(null);
-   const [anchorE2, setAnchorE2] = React.useState(null);
+export default function MenuCustom() {
+   const [anchorEl, setAnchorEl] = useState(null);
+   const [anchorE2, setAnchorE2] = useState(null);
    const openFilm = Boolean(anchorEl);
    const openTheater = Boolean(anchorE2);
    const handleClickFilm = (event) => {
@@ -28,7 +27,7 @@ export default function NowShowing() {
       setAnchorEl(null);
    };
    return (
-      <AppBar position="static">
+      <AppBar position="fixed">
          <Toolbar>
             <Typography variant="h6" component="div">
                Logo
@@ -57,10 +56,10 @@ export default function NowShowing() {
                }}
             >
                <MenuItem>
-                  <a href="">Phim đang chiếu</a>
+                  <Link to={"/now-showing"}>Phim dang chieu</Link>
                </MenuItem>
                <MenuItem>
-                  <a href="">Phim sắp chiếu</a>
+                  <Link to={"/now-showing"}>Phim dang chieu</Link>
                </MenuItem>
             </Menu>
 
@@ -84,10 +83,10 @@ export default function NowShowing() {
                }}
             >
                <MenuItem>
-                  <a href="">Rap đang chiếu</a>
+                  <Link to={"/now-showing"}>Rap đang chiếu</Link>
                </MenuItem>
                <MenuItem>
-                  <a href="">Rap sắp chiếu</a>
+                  <Link to={"/now-showing"}>Rap sắp chiếu</Link>
                </MenuItem>
             </Menu>
             <Button color="inherit">Thành viên</Button>
